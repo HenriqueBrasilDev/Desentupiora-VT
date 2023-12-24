@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>Desentupidora VT</title>
+
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="header-top container">
+                <h1><img src="./icons/24horasicon.png" alt="">Atendimento 24 horas</h1>
+                <h1 id="orç"><img src="./icons/orçamentoicon.png" alt="">Orçamento Gratuito</h1>
+                <h1 id="mpre"><img src="./icons/menorpreçoicon.png" alt="">Melhor Preço</h1>
+                <div class="num">
+                    <a id="teldjhow" type="tel" href="+55 (11)  91336-5727" target="_blank"><img src="./icons/telicon.png" alt="">+55 (11)  91336-5727</a>
+                    <a id="teldjhow" style="margin: 0 10px ;">|</a>
+                    <a type="tel" href="+55 (11) 98132-3307" target="_blank">+55 (11)  98132-3307</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+                <div class="header container">
+                    <label class="menu-hamburguer selected" onclick="descer_menu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    
+
+                    <a href="index.html" style="text-decoration: none;" title="Inicio">
+                        <div class="logo">
+                            <img src="./images/logoVTwhite.png" alt="">
+                            <h1>VT DESENTUPIDORA</h1>
+                        </div>
+                    </a>
+                    
+                    
+                    <nav>
+                        <ul id="menu">
+                            <li>
+                                <a href="index.html" title="Tela inicial">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#sobre" title="Quem somos nós?">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#serviços" title="Nossos Procedimentos">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#depoimentos" title="Nossos Clientes">Depoimentos</a>
+                            </li>
+                            <li>
+                                <a href="#contatos" title="Fale Conosco">Contatos</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="btt">
+                        <a href="https://wa.me/+5511981323307" id="bttmediag" target="_blank"><img src="./icons/whatsicon.png" alt="" title="Whatsapp">Orçamento Grátis</a>
+                        <a href="https://wa.me/+5511981323307" id="bttmediap" target="_blank"><img src="./icons/whatsicon.png" alt=""></a>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <div id="carrousel">
+        <img src="./images/desentupidora-na-pompéia.jpg" alt="" class="selected">
+        <img src="./images/Zona-Leste-de-Sao-Paulo.jpg" alt="" class="">
+        <img src="./images/desentupidora-piraquara-bg-2-1.jpg" alt="" class="">
+        <div class="container-radios">
+            <label>
+                <input class="radio" type="radio" name="radios-slide" id="radio0" value="0" onclick="radiocheked()" checked>
+            </label>
+            
+            <label>
+                <input class="radio" type="radio" name="radios-slide" id="radio1" value="1" onclick="radiocheked()">
+            </label>
+            
+            <label>
+                <input class="radio" type="radio" name="radios-slide" id="radio2" value="2" onclick="radiocheked()">
+            </label>
+        </div>
+        <div class="carrousel-texto container">
+            <div class="texto selected">
+                <h2>Avaliação Online Grátis</h2>
+                <h2>Limpo e de confiança</h2>
+                <p>Quando um entupimento acontece, não hesite em nos contatar. Estamos disponíveis para ajudar a resolver seus problemas de entupimento de forma rápida e eficaz.</p>
+            </div>
+            <div class="texto">
+                <h2>Desentupidora 24 horas</h2>
+                <h2>Melhor preço da Região!</h2>
+                <p>A desentupidora VT vai até você no mesmo momento que surge o problema! Não disperdice seu tempo atendemos em toda a região Leste de São Paulo.</p>
+            </div>
+            <div class="texto">
+                <h2>Whatsapp ou ligação</h2>
+                <h2>telefone: <a href="https://wa.me/+5511981323307" type="tel" target="_blank">(11)   98132-3307</a></h2>
+                <p>Nossos profissionais estão disponíveis 24 horas por dia, inclusive sábados, domingos e feriados. Todo tipo de desentupimento acompanhe em "Nossos serviços".</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="paralax">
+        <div class="container">
+            <h1>FORMAS DE PAGAMENTOS</h1>
+        </div>
+        <div class="formas_pagamento">
+            <ul class="container">
+                <li>
+                    <img src="./images/icon_dinheiro.png" alt="Dinheiro">
+                    <div>
+                        <h2>À VISTA</h2>
+                        <h3>Com até 10% de desconto</h3>
+                    </div>
+                </li>
+                <li class="pix">
+                    <img src="./images/icon_pix_w.png" alt="Pix">
+                </li>
+                <li>
+                    <img src="./images/icon_cartao.png" alt="Cartão">
+                    <div>
+                        <h2>CRÉDITO</h2>
+                        <h3>Em até 5x sem juros</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <img src="./images/icon_sobre.jpg" alt="Sobre?">
+            <div class="texto">
+                <h2>Quem somos nós?</h2>
+                <p>Somos a desentupidora VT, atuamos principalmente na região Leste de São Paulo, Atendimento rápido, limpo e eficiente! Se não resolvermos seu problema, devolvemos seu dinheiro. Orçamento Gratuito e atendimento 24 Horas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="serviços" class="produtos">
+        <h1>SERVIÇOS</h1>
+        <ul class="container">
+            <li>
+                <img src="./images/pia.png" alt="">
+                <h2>Desentupimento de Pia</h2>
+                <p>Com ferramentas especializadas, removemos obstruções, como acúmulo de gordura, restos de alimentos, objetos estranhos ou acumulação de resíduos, restaurando o fluxo normal da água.</p>
+                <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
+            </li>
+            <li class="prod_centro">
+                <img src="./images/esgoto.jpg" alt="">
+                <h2>Desentupimento de Esgoto</h2>
+                <p>Na nossa desentupidora especializada em caixas de esgoto, compreendemos a importância de resolver prontamente esses entupimentos para garantir a funcionalidade adequada do sistema.</p>
+                <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
+            </li>
+            <li>
+                <img src="./images/gordura.jpeg" alt="">
+                <h2>Caixa de Gordura</h2>
+                <p>Desentupidora especializada, munida de profissionais experientes, equipamentos modernos e técnicas precisas, estamos preparados para resolver os entupimentos rápido.</p>
+                <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
+            </li>
+            <li>
+                <img src="./images/Ralo.png" alt="">
+                <h2>Desentupimento de Ralo</h2>
+                <p>Na nossa desentupidora especializada em ralos, entendemos a urgência e a importância de resolver esse problema de maneira rápida e eficaz para restaurar o fluxo normal da água. Solicite uma visita grátis.</p>
+                <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
+            </li>
+            <li class="prod_centro">
+                <img src="./images/vaso.jpg" alt="">
+                <h2>Vaso Sanitario</h2>
+                <p>Iniciamos com uma inspeção detalhada para identificar a causa do entupimento. Utilizamos ferramentas de diagnóstico especializadas para encontrar o ponto exato do bloqueio. Chame pelo whatsapp.</p>
+                <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
+            </li>
+            <li>
+                <img src="./images/fossa.jpg" alt="">
+                <h2>Desentupimento de Fossa</h2>
+                <p>Não permita que um entupimento nesse componente cause transtornos. Entre em contato conosco para uma solução eficiente e duradoura. Temos os melhores preços do mercado.</p>
+                <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div id="imgs" class="images_dep">
+                <div class="depoimento selected">
+                    <img src="./images/depoimento1.jpg" alt="">
+                    <h2>Gerente Joaquim</h2>
+                    <h3>Empresa shopping garden</h3>
+                    <p>"Gostaria de expressar minha satisfação com os serviços da Desentupidora VT. Enfrentamos um problema de entupimento em nossa casa, e a equipe da Desentupidora VT foi extremamente eficiente e profissional. Resolveram a situação de forma rápida e deixaram tudo limpo. Recomendo essa desentupidora para quem busca qualidade e comprometimento."</p>
+                </div>
+                <div class="depoimento">
+                    <img src="./images/depoimento3.jpg" alt="">
+                    <h2>Lara Garcia</h2>
+                    <h3>Residência Mogi das Cruzes</h3>
+                    <p>"Agradeço à Desentupidora VT pelo atendimento excepcional que recebemos. Desde o primeiro contato até a conclusão do serviço, a equipe demonstrou profissionalismo e dedicação. Resolveram o entupimento em nossa residência de maneira eficiente, e o atendimento ao cliente foi cordial e informativo. Recomendo a Limppower para todos que buscam um serviço de qualidade."</p>
+                </div>
+                <div class="depoimento">
+                    <img src="./images/depoimento2.jpg" alt="">
+                    <h2>Dr. Douglas</h2>
+                    <h3>Escritório em Ferraz</h3>
+                    <p>"Quando precisamos de serviços de desentupimento, escolhemos a Desentupidora VT e ficamos muito satisfeitos com a escolha. A equipe foi rápida, diagnosticou o problema de maneira precisa e resolveu de forma eficaz. Além disso, a Desentupidora VT mostrou comprometimento com a limpeza após o serviço. Recomendo essa desentupidora para quem busca resultados rápidos e de qualidade."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatos">
+        <div class="container">
+            <ul class="menu">
+                <h1>Menu</h1>
+                <li>
+                    <a href="index.html" title="tela inicial">○ Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre" title="Quem somos nós?">○ Sobre</a>
+                </li>
+                <li>
+                    <a href="#serviços" title="Nossos Procedimentos">○ Serviços</a>
+                </li>
+                <li>
+                    <a href="#depoimentos" title="Nossos Clientes">○ Depoimentos</a>
+                </li>
+                <li>
+                    <a href="#contatos" title="Fale Conosco">○ Contatos</a>
+                </li>
+            </ul>
+            
+            <div class="desentupidora">
+                <img src="./images/logoVTwhite.png" style="width: 150px; " alt="">
+                <h1>Desentupidora VT</h1>
+                <p>Não espere o entupimento piorar, entre em contato com a  Desentupidora VT. Quando um entupimento acontece, não hesite em nos contatar. Estamos disponíveis para ajudar a resolver seus problemas de entupimento de forma rápida e eficaz.</p>
+                <img src="./images/formas-de-pagamento.png" alt="">
+            </div>
+
+            <ul class="contatos">
+                <h1>Contatos</h1>
+                <li>
+                    <a href="https://wa.me/+5511981323307">○ +55 (11) 98132-3307</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/+5511981323307">○ +55 (11) 91336-5727 </a>
+                </li>
+                <li class="bttend">
+                    <a href="https://wa.me/+5511981323307" target="_blank" rel="noopener noreferrer">Avaliação Gratuita</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="credits">
+            <div class="container">
+                <p>2023 &copy; Desentupidora VT - Todos os direitos reservados</p>
+                <p>Create by Henrique Brasil - <a href="https://www.instagram.com/brazil.dev/" target="_blank">@brazil.dev</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
