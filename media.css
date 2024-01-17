@@ -148,7 +148,7 @@
     .formas_pagamento h3{
         color: white;
         text-align: left;
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .formas_pagamento h3{
@@ -156,26 +156,22 @@
     }
 
 
-
-
-
     .sobre{
-        padding-top: 100px;
-
+        padding-top: 0;
     }
 
     .sobre .container{
         width:90%;
-        height: 440px;
-        background-color: #156121;
+        height: auto;
+        background-color: transparent;
         border-radius: 15px;
-        margin: 80px 5% 60px 5%;
+        margin: 90px 5% 50px 5%;
         position: relative;
     }
 
     .sobre .container::after,
     .sobre .container::before{
-        top: 499px;
+        top: 639px;
     }
 
 
@@ -186,20 +182,27 @@
         border-radius: 15px;
         position: absolute;
         box-shadow: 10px 10px 20px;
-        top: -45%;
+        top: -20px;
         left: 0;
+
+        z-index: 1;
     }
 
     .sobre .texto{
-        margin: 30px;
         position: relative;
-        padding-top: 120px;
+        padding: 230px 10px 100px 10px;
+        background-color: #156121;
+        border-radius: 15px;
+        height: 510px;
+
+
+        margin: 80px 5% 0px 5%;
     }
 
     .sobre h2{
         color: #ffffff;
-        text-align: left;
-        padding: 30px 20px 20px 0;
+        text-align: center;
+        padding: 30px 20px 10px 0;
         text-shadow: 5px 5px 5px black;
     }
 
@@ -207,13 +210,15 @@
         text-shadow: 5px 5px 5px black;
         color: white;
         padding: 10px 0 20px 0;
-        text-align: left;
+        text-align: center;
     }
 
 
 
 
-
+    .produtos{
+        padding-top: 200px;
+    }
     
     .produtos li{
         width: 100%;
