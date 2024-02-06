@@ -213,15 +213,15 @@ header{
 
 @keyframes piscarbotao{
     0%{
-        box-shadow: 0 0 15px #24b63d;
+        box-shadow: 0 0 20px #24b63d;
     }
 
     50%{
-        box-shadow: 0 0 0px #24b63d;
+        box-shadow: 0 0 5px #24b63d;
     }
 
     100%{
-        box-shadow: 0 0 15px #24b63d;
+        box-shadow: 0 0 20px #24b63d;
     }
 }
 
