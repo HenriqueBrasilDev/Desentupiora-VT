@@ -8,6 +8,9 @@ texto = document.querySelectorAll(".carrousel-texto .texto"),
 
 imgs = document.getElementById("imgs"),
 perfil = document.querySelectorAll("#imgs .depoimento"),
+oopen = document.querySelectorAll(".carrousel-texto .texto"),
+cclosed = document.querySelectorAll(".carrousel-texto .texto"),
+
 
 contmenu = 0,
 idx = 0;
@@ -87,11 +90,15 @@ function descer_menu(){
 
     if (menu.style.display == "flex"){
 
-        menu.style.display = "none"
-    } 
+        menu.style.animation = "fadeOUT";
+        menu.style.display = "none";
+        document.querySelector(".header .oopen").style.display = "block";
+        document.querySelector(".header .cclosed").style.display = "none";
+    }
     else {
-        menu.style.display = "flex"
-
+        menu.style.display = "flex";
+        document.querySelector(".header .oopen").style.display = "none";
+        document.querySelector(".header .cclosed").style.display = "block";
     }
     
 }

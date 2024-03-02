@@ -11,6 +11,7 @@ body{
     text-decoration: none;
     position: relative;
     overflow-x: hidden;
+    overflow-y: auto;
 
 }
 
@@ -73,6 +74,8 @@ header{
     text-decoration: none;
 }
 
+/* header */
+
 .header{
     align-items: center;
     width: 100%;
@@ -84,7 +87,6 @@ header{
 
 .header .logo{
     display: flex;
-    height: 60px;
     position: relative;
     align-items: center;
 }
@@ -95,28 +97,22 @@ header{
 }
 
 .header .logo > img{
-    height: 60px;
+    height: 50px;
+}
+
+
+/* menu */
+
+.header .cclosed{
+    display: none;
 }
 
 .header .menu-hamburguer{
     display: none;
-    width: 30px;
-    margin: 0 30px;
-    cursor: pointer;
-}
-
-.header .menu-hamburguer span{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    margin-bottom: 4px;
-    border-radius: 2px;
 }
 
 .header nav ul{
     align-items: center;
-    border-radius: 15px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -213,7 +209,7 @@ header{
 
 @keyframes piscarbotao{
     0%{
-        box-shadow: 0 0 20px #24b63d;
+        box-shadow: 0 0 25px #24b63d;
     }
 
     50%{
@@ -221,7 +217,7 @@ header{
     }
 
     100%{
-        box-shadow: 0 0 20px #24b63d;
+        box-shadow: 0 0 25px #24b63d;
     }
 }
 
@@ -495,20 +491,23 @@ header{
     text-align: left;
 }
 
+/* Serviços */
 
 .produtos{
-    background-color: #15612033;
+    background-image: url(./Logo\ +\ identidade\ visual/folhas_background_serviços.jpg);
     padding-top: 130px;
     position: relative;
+    padding-bottom: 390px;
 }
 
 .produtos h1{
     width: 100%;
     text-align: center;
-    color: #156121;
+    color: #ffffff;
     margin: 0 auto 20px auto;
     font-size: 60px;
     font-weight: bold;
+    text-shadow: #000000 0px 15px 10px;
 }
 
 .produtos ul{
@@ -566,35 +565,34 @@ header{
     box-shadow: 0 0 5px #24b63d;
 }
 
-.produtos::after,
-.produtos::before{
+.depoimentos::after,
+.depoimentos::before{
     content: "";
 
     width: 0;
     height: 0;
     position: absolute;
-    z-index: 1;
 
-    top: 100%;
+    top: 62%;
 }
 
-.produtos::after{
-    border-left: solid 1200px #15612033;
-    border-bottom: solid 200px transparent;
+.depoimentos::after{
+    border-left: solid 1200px transparent;
+    border-bottom: solid 200px rgb(255, 255, 255);
     border-right: solid 200px transparent;
     left: 50%;
 }
 
-.produtos::before{
+.depoimentos::before{
     border-left: solid 200px transparent;
-    border-bottom: solid 200px transparent;
-    border-right: solid  1200px #15612033;
+    border-bottom: solid 200px rgb(255, 255, 255);
+    border-right: solid  1200px transparent;
     right: 50%;
 }
 
 
 .depoimentos{
-    padding: 200px 0 100px 0;
+    padding: 150px 0 100px 0;
 }
 
 .depoimentos .images_dep{

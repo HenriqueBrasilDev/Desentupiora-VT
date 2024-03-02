@@ -41,9 +41,16 @@
         <div class="header">
                 <div class="header container">
                     <label class="menu-hamburguer selected" onclick="descer_menu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
+                        <div class="cclosed">
+                            <a style="color: white; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: medium;">X</a>
+                        </div>
+                        
+                        <div class="oopen">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </label>
                     
 
@@ -58,7 +65,7 @@
                     <nav>
                         <ul id="menu">
                             <li>
-                                <a href="index.html" title="Tela inicial">Inicio</a>
+                                <a href="#inicio" title="Tela inicial">Inicio</a>
                             </li>
                             <li>
                                 <a href="#sobre" title="Quem somos nós?">Sobre</a>
@@ -83,41 +90,44 @@
         </div>
     </header>
 
-    <div id="carrousel">
-        <img src="./images/Zona-Leste-de-Sao-Paulo.jpg" alt="" class="selected">
-        <img src="./images/O-que-devo-saber-para-contratar-uma-desentupidora.png" alt="" class="">
-        <img src="./images/desentupidora-piraquara-bg-2-1.jpg" alt="" class="">
-        <div class="container-radios">
-            <label>
-                <input class="radio" type="radio" name="radios-slide" id="radio0" value="0" onclick="radiocheked()" checked>
-            </label>
-            
-            <label>
-                <input class="radio" type="radio" name="radios-slide" id="radio1" value="1" onclick="radiocheked()">
-            </label>
-            
-            <label>
-                <input class="radio" type="radio" name="radios-slide" id="radio2" value="2" onclick="radiocheked()">
-            </label>
+    <section id="inicio">
+        <div href="" id="carrouselleft" onclick="imgright()"></div>
+        <div id="carrousel">
+            <img src="./images/Zona-Leste-de-Sao-Paulo.jpg" alt="" class="selected">
+            <img src="./images/O-que-devo-saber-para-contratar-uma-desentupidora.png" alt="" class="">
+            <img src="./images/desentupidora-piraquara-bg-2-1.jpg" alt="" class="">
+            <div class="container-radios">
+                <label>
+                    <input class="radio" type="radio" name="radios-slide" id="radio0" value="0" onclick="radiocheked()" checked>
+                </label>
+                
+                <label>
+                    <input class="radio" type="radio" name="radios-slide" id="radio1" value="1" onclick="radiocheked()">
+                </label>
+                
+                <label>
+                    <input class="radio" type="radio" name="radios-slide" id="radio2" value="2" onclick="radiocheked()">
+                </label>
+            </div>
+            <div class="carrousel-texto container">
+                <div class="texto selected">
+                    <h2>Avaliação Online Grátis</h2>
+                    <h2>Limpo e de confiança</h2>
+                    <p>Quando um entupimento acontece, não hesite em nos contatar. Estamos disponíveis para ajudar a resolver seus problemas de entupimento de forma rápida e eficaz e com higiene.</p>
+                </div>
+                <div class="texto">
+                    <h2>Desentupidora 24 horas</h2>
+                    <h2>Melhor preço da Região!</h2>
+                    <p>A desentupidora VT vai até você no mesmo momento que surge o problema! Não disperdice seu tempo atendemos em toda a região Leste de São Paulo.</p>
+                </div>
+                <div class="texto">
+                    <h2>Whatsapp ou ligação</h2>
+                    <h2>telefone: <a href="https://wa.me/+5511981323307" type="tel" target="_blank">(11)   98132-3307</a></h2>
+                    <p>Nossos profissionais estão disponíveis 24 horas por dia, inclusive sábados, domingos e feriados. Todo tipo de desentupimento acompanhe em "Nossos serviços".</p>
+                </div>
+            </div>
         </div>
-        <div class="carrousel-texto container">
-            <div class="texto selected">
-                <h2>Avaliação Online Grátis</h2>
-                <h2>Limpo e de confiança</h2>
-                <p>Quando um entupimento acontece, não hesite em nos contatar. Estamos disponíveis para ajudar a resolver seus problemas de entupimento de forma rápida e eficaz e com higiene.</p>
-            </div>
-            <div class="texto">
-                <h2>Desentupidora 24 horas</h2>
-                <h2>Melhor preço da Região!</h2>
-                <p>A desentupidora VT vai até você no mesmo momento que surge o problema! Não disperdice seu tempo atendemos em toda a região Leste de São Paulo.</p>
-            </div>
-            <div class="texto">
-                <h2>Whatsapp ou ligação</h2>
-                <h2>telefone: <a href="https://wa.me/+5511981323307" type="tel" target="_blank">(11)   98132-3307</a></h2>
-                <p>Nossos profissionais estão disponíveis 24 horas por dia, inclusive sábados, domingos e feriados. Todo tipo de desentupimento acompanhe em "Nossos serviços".</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="container">
@@ -161,7 +171,7 @@
         <h1>SERVIÇOS</h1>
         <ul class="container">
             <li>
-                <img src="./images/pia.jpg" alt="">
+                <img src="./images/pia.jpg" alt=""> 
                 <h2>Desentupimento de Pia</h2>
                 <p>Com ferramentas especializadas, removemos obstruções, como acúmulo de gordura, restos de alimentos, objetos estranhos ou acumulação de resíduos, restaurando o fluxo normal da água.</p>
                 <a href="https://wa.me/+5511981323307" target="_blank">Orçamento</a>
