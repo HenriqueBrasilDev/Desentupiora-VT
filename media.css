@@ -99,8 +99,8 @@
 
     .header .cclosed{
         display: none;
-        bottom: -18px;
-        left: 5px;
+        bottom: -16px;
+        left: 7px;
         animation-name: sumsur;
         animation-duration: 2s;
     }
@@ -126,20 +126,17 @@
     
     .header nav ul{
         position: absolute;
-        background-color: #156121;
-        border-radius: 5px;
+        background-color: #00000000;
         right: 0px;
-        top: 85px;
+        top: 70px;
         font-size: 13px;
-        transition: 2s ease;
         display: none;
-        transition: 5s;
+        transition: 1s;
         animation-name: fadeIN;
         animation-duration: 1s;
         z-index: -1;
-        margin: 0 2%;
-        width: 96%;
-
+        margin: 0;
+        width: 100%;
     }
 
     @keyframes fadeIN{
@@ -151,7 +148,7 @@
 
         100%{
             opacity: 1;
-            top: 85px;
+            top: 70px;
         }
     }
 
@@ -181,13 +178,15 @@
         z-index: 1;
         width: 100%;
         height: 400px;
+       
         opacity: 0;
         position: absolute;
         cursor: pointer;
+        background-color: red;
     }
 
 
-    #carrousel{
+    .carrousel{
         z-index: -1;
         padding-top: 30px;
         position: relative;
@@ -197,32 +196,32 @@
         padding-bottom: 20px;
     }
 
-    #carrousel img{
+    .carrousel img{
         height: 400px;
         object-fit: cover;
     }
 
-    .carrousel-texto{
+    .carrousel_texto{
         top: 25%;
     }
     
-    .carrousel-texto .texto{
+    .carrousel_texto .texto{
         width: 100vw;
         padding: 10px;
         text-align: center;
     }
 
-    .carrousel-texto > .selected{
+    .carrousel_texto > .selected{
         animation: texto_top;
         animation-duration: 1s;
         opacity: 1;
     }
     
-    .carrousel-texto .texto h2{
+    .carrousel_texto .texto h2{
         font-size: 20px;
     }
 
-    .carrousel-texto .texto p{
+    .carrousel_texto .texto p{
         font-size: 15px;
     }
 
@@ -263,67 +262,36 @@
 
 
     .sobre{
-        padding-top: 0;
+        padding-top: 1px;
+    }
+    
+    .sobre .container{
+        height: auto;
+        margin: 80px auto auto auto;
+        position: relative;
+        width: 100%;
     }
 
-    .sobre .container{
-        width:90%;
-        height: auto;
-        background-color: transparent;
-        border-radius: 15px;
-        margin: 90px 5% 50px 5%;
-        position: relative;
-    }
 
     .sobre .container::after,
     .sobre .container::before{
-        top: 639px;
-    }
-
-
-    .sobre img{
-        width: 80%;
-        object-fit: cover;
-        margin: 40px;
-        border-radius: 15px;
-        position: absolute;
-        box-shadow: 10px 10px 20px;
-        top: -20px;
-        left: 0;
-
-        z-index: 1;
-    }
-
-    .sobre .texto{
-        position: relative;
-        padding: 230px 10px 100px 10px;
-        background-color: #156121;
-        border-radius: 15px;
-        height: 510px;
-
-
-        margin: 80px 5% 0px 5%;
+        display: none;
     }
 
     .sobre h2{
-        color: #ffffff;
-        text-align: center;
-        padding: 30px 20px 10px 0;
-        text-shadow: 5px 5px 5px black;
+        font-size: 20px;
     }
 
     .sobre p{
-        text-shadow: 5px 5px 5px black;
-        color: white;
-        padding: 10px 0 20px 0;
-        text-align: center;
+        font-size: 15px;
+        padding: 20px;
     }
 
 
 
 
     .produtos{
-        padding-top: 200px;
+        padding-top: 70px;
     }
     
     .produtos li{
@@ -335,25 +303,19 @@
     
 
     .depoimentos{
-        padding: 200px 0 50px 0;
     }
 
-    .depoimentos .container{
-        width: 300px;
-        height: 700px;
+    .depoimentos > .container{
+        width: 100%;
+        height: 600px;
         margin: 0  auto;
         position: relative;
-    }
-    
-    .depoimentos .images_dep{
-        width: 100%;
         display: flex;
         justify-content: center;
     }
     
-    .depoimentos .images_dep .depoimento{
+    .depoimentos .container .depoimento{
         list-style: none;
-        height: 600px;
         width: 100%;
         padding: 20px;
         position: absolute;
@@ -380,7 +342,7 @@
         color: #6e6e6e;
     }
 
-    .depoimentos .images_dep .selected{
+    .depoimentos .container .selected{
         opacity: 1;
     }
 

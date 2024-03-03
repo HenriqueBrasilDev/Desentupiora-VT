@@ -6,6 +6,8 @@
     
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="./images/logoVTwhite.png" type="image/x-icon">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +45,7 @@
                     <label class="menu-hamburguer selected" onclick="descer_menu()">
 
                         <div class="cclosed">
-                            <a style="color: white; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: medium;">X</a>
+                            <a style="color: white; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: medium;">x</a>
                         </div>
                         
                         <div class="oopen">
@@ -92,10 +94,12 @@
 
     <section id="inicio">
         <div href="" id="carrouselleft" onclick="imgright()"></div>
-        <div id="carrousel">
-            <img src="./images/Zona-Leste-de-Sao-Paulo.jpg" alt="" class="selected">
-            <img src="./images/O-que-devo-saber-para-contratar-uma-desentupidora.png" alt="" class="">
-            <img src="./images/desentupidora-piraquara-bg-2-1.jpg" alt="" class="">
+        <div class="carrousel">
+            
+                <img src="./images/Zona-Leste-de-Sao-Paulo.jpg" alt="" class="selected">
+                <img src="./images/O-que-devo-saber-para-contratar-uma-desentupidora.png" alt="" class="">
+                <img src="./images/desentupidora-piraquara-bg-2-1.jpg" alt="" class="">
+            
             <div class="container-radios">
                 <label>
                     <input class="radio" type="radio" name="radios-slide" id="radio0" value="0" onclick="radiocheked()" checked>
@@ -109,7 +113,7 @@
                     <input class="radio" type="radio" name="radios-slide" id="radio2" value="2" onclick="radiocheked()">
                 </label>
             </div>
-            <div class="carrousel-texto container">
+            <div class="carrousel_texto container">
                 <div class="texto selected">
                     <h2>Avaliação Online Grátis</h2>
                     <h2>Limpo e de confiança</h2>
@@ -158,10 +162,11 @@
 
     <section id="sobre" class="sobre">
         <div class="container">
-            <img src="./images/icon_sobre.jpg" alt="Sobre?">
             <div class="texto">
                 <h2>Quem somos nós?</h2>
-                <p>Somos a desentupidora VT, atuamos principalmente na região Leste de São Paulo, Atendimento rápido, limpo e eficiente! Se não resolvermos seu problema, devolvemos seu dinheiro. Orçamento Gratuito e atendimento 24 Horas.
+                <p>
+                    Desenvolvida em 2023 para alcançar cliente que não sabem mais o que fazer com o encanamento de suas residências ou empresa.
+                    Somos a desentupidora VT, atuamos principalmente na região Leste de São Paulo. Atendimento rápido, limpo e eficiente! Se não resolvermos seu problema, devolvemos seu dinheiro. Orçamento Gratuito e atendimento 24 Horas.
                 </p>
             </div>
         </div>
@@ -211,25 +216,23 @@
 
     <section id="depoimentos" class="depoimentos">
         <div class="container">
-            <div id="imgs" class="images_dep">
-                <div class="depoimento selected">
-                    <img src="./images/depoimento1.jpg" alt="">
-                    <h2>Gerente Joaquim</h2>
-                    <h3>Empresa shopping garden</h3>
-                    <p>"Gostaria de expressar minha satisfação com os serviços da Desentupidora VT. Enfrentamos um problema de entupimento em nossa casa, e a equipe da Desentupidora VT foi extremamente eficiente e profissional. Resolveram a situação de forma rápida e deixaram tudo limpo. Recomendo essa desentupidora para quem busca qualidade e comprometimento."</p>
-                </div>
-                <div class="depoimento">
-                    <img src="./images/depoimento3.jpg" alt="">
-                    <h2>Lara Garcia</h2>
-                    <h3>Residência Mogi das Cruzes</h3>
-                    <p>"Agradeço à Desentupidora VT pelo atendimento excepcional que recebemos. Desde o primeiro contato até a conclusão do serviço, a equipe demonstrou profissionalismo e dedicação. Resolveram o entupimento em nossa residência de maneira eficiente, e o atendimento ao cliente foi cordial e informativo. Recomendo a Limppower para todos que buscam um serviço de qualidade."</p>
-                </div>
-                <div class="depoimento">
-                    <img src="./images/depoimento2.jpg" alt="">
-                    <h2>Dr. Douglas</h2>
-                    <h3>Escritório em Ferraz</h3>
-                    <p>"Quando precisamos de serviços de desentupimento, escolhemos a Desentupidora VT e ficamos muito satisfeitos com a escolha. A equipe foi rápida, diagnosticou o problema de maneira precisa e resolveu de forma eficaz. Além disso, a Desentupidora VT mostrou comprometimento com a limpeza após o serviço. Recomendo essa desentupidora para quem busca resultados rápidos e de qualidade."</p>
-                </div>
+            <div class="depoimento selected">
+                <img src="./images/depoimento1.jpg" alt="">
+                <h2>Gerente Joaquim</h2>
+                <h3>Empresa shopping garden</h3>
+                <p>"Gostaria de expressar minha satisfação com os serviços da Desentupidora VT. Enfrentamos um problema de entupimento em nossa casa, e a equipe da Desentupidora VT foi extremamente eficiente e profissional. Resolveram a situação de forma rápida e deixaram tudo limpo. Recomendo essa desentupidora para quem busca qualidade e comprometimento."</p>
+            </div>
+            <div class="depoimento">
+                <img src="./images/depoimento3.jpg" alt="">
+                <h2>Lara Garcia</h2>
+                <h3>Residência Mogi das Cruzes</h3>
+                <p>"Agradeço à Desentupidora VT pelo atendimento excepcional que recebemos. Desde o primeiro contato até a conclusão do serviço, a equipe demonstrou profissionalismo e dedicação. Resolveram o entupimento em nossa residência de maneira eficiente, e o atendimento ao cliente foi cordial e informativo. Recomendo a Limppower para todos que buscam um serviço de qualidade."</p>
+            </div>
+            <div class="depoimento">
+                <img src="./images/depoimento2.jpg" alt="">
+                <h2>Dr. Douglas</h2>
+                <h3>Escritório em Ferraz</h3>
+                <p>"Quando precisamos de serviços de desentupimento, escolhemos a Desentupidora VT e ficamos muito satisfeitos com a escolha. A equipe foi rápida, diagnosticou o problema de maneira precisa e resolveu de forma eficaz. Além disso, a Desentupidora VT mostrou comprometimento com a limpeza após o serviço. Recomendo essa desentupidora para quem busca resultados rápidos e de qualidade."</p>
             </div>
         </div>
     </section>

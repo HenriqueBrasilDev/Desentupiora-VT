@@ -1,15 +1,15 @@
 time = 10000,
 currentImageIndex = 0,
-images = document.querySelectorAll("#carrousel img"),
+images = document.querySelectorAll(".carrousel img"),
 maximg = images.length,
 
-texto = document.querySelectorAll(".carrousel-texto .texto"),
+texto = document.querySelectorAll(".carrousel_texto .texto"),
 
 
-imgs = document.getElementById("imgs"),
-perfil = document.querySelectorAll("#imgs .depoimento"),
-oopen = document.querySelectorAll(".carrousel-texto .texto"),
-cclosed = document.querySelectorAll(".carrousel-texto .texto"),
+imgs = document.getElementById(".depoiomentos .container"),
+perfil = document.querySelectorAll(".depoimentos .depoimento"),
+oopen = document.querySelectorAll(".carrousel_texto .texto"),
+cclosed = document.querySelectorAll(".carrousel_texto .texto"),
 
 
 contmenu = 0,
