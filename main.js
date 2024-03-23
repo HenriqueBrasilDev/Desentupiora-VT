@@ -8,8 +8,6 @@ texto = document.querySelectorAll(".carrousel_texto .texto"),
 
 imgs = document.getElementById(".depoiomentos .container"),
 perfil = document.querySelectorAll(".depoimentos .depoimento"),
-oopen = document.querySelectorAll(".carrousel_texto .texto"),
-cclosed = document.querySelectorAll(".carrousel_texto .texto"),
 
 
 contmenu = 0,
@@ -88,17 +86,19 @@ setInterval(carrossel_depoimentos, 10000);
 
 function descer_menu(){
 
-    if (menu.style.display == "flex"){
+    const btn_ham = document.getElementById('hamburguer')
+    btn_ham.classList.toggle('anime_burg')
 
-        menu.style.animation = "fadeOUT";
-        menu.style.display = "none";
-        document.querySelector(".header .oopen").style.display = "block";
-        document.querySelector(".header .cclosed").style.display = "none";
-    }
-    else {
-        menu.style.display = "flex";
-        document.querySelector(".header .oopen").style.display = "none";
-        document.querySelector(".header .cclosed").style.display = "block";
-    }
+    const fadeIn = document.querySelector('.header nav ul')
+    fadeIn.classList.toggle('ativo')
+
+
+    // if (menu.style.display == "block"){
+        
+    //     menu.style.display = "none";
+    // }
+    // else {
+    //     menu.style.display = "block";
+    // }
     
 }
