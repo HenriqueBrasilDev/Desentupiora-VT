@@ -27,6 +27,7 @@ header{
     box-shadow: 0 0px 30px 0px;
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5) );
     position: fixed;
+    z-index: 2;
 }
 
 .header-top{
@@ -366,6 +367,7 @@ header{
     width: 100%;
     background-color: #24b63d;
     font-weight: bold;
+    box-shadow: 0px 20px 50px 8px #000000;
 }
 
 .paralax h1{
@@ -424,6 +426,7 @@ header{
     padding: 60px;
     position: relative;
     height: 800px;
+    z-index: -1;
 }
 
 .sobre .container{
